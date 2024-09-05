@@ -1,4 +1,1 @@
-# Portfolio template for you!
-
-In the Code Garden this September, we'll show you how to create a portfolio website! 
-Fork this repo, and edit it to make your own porfolio site. 
+This is my portfolio. A little basic but I tried to do the absolute best I could in order to make this look as neat and minimalistic possible. 
