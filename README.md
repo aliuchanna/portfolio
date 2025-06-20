@@ -1,0 +1,1 @@
+This is my portfolio. A little basic but I tried to do the absolute best I could in order to make this look as neat and minimalistic possible. 
