@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link href="style.css?v=2" rel="stylesheet">
     <title>Ali Channa - Portfolio</title>
 
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- Icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,207 +25,285 @@
   </head>
 
   <body>
-    <div class="container">
-      <!-- Top Bar -->
-      <header class="topbar">
-        <div class="topbar-left">
-          <h1 class="name">Ali Uzair Channa</h1>
-          <p class="tagline">Aspiring Full-Stack Developer with a Passion for Innovation</p>
-        </div>
+    <!-- Top Nav -->
+    <nav class="top-nav">
+      <div class="nav-left">
+        <a class="nav-logo" href="#top">Ali Uzair Channa</a>
+      </div>
 
-        <div class="topbar-right">
-          <a class="pill" href="#projects">Projects</a>
-          <a class="pill" href="mailto:ali.u.channa12@gmail.com">Email</a>
-        </div>
-      </header>
+      <div class="nav-right">
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link" href="mailto:ali.u.channa12@gmail.com">Email</a>
+      </div>
+    </nav>
 
+    <div id="top" class="container">
       <!-- Hero -->
       <section class="hero">
-        <div class="hero-card">
-          <div class="hero-blurb">
-            <h2>Aspiring Full-Stack Developer with a Passion for Innovation</h2>
-            <p>
-              I am currently pursuing a degree in Computer Science at Mount Royal University, with years of customer service and industry-related experience. Having worked with leading telecom companies such as Rogers and Telus, I have gained valuable technical insights that fuel my passion for developing innovative solutions. I am a motivated team player who enjoys collaborating on projects and applying my skills to real-world problems. I am excited to continue building my knowledge and contribute to impactful projects in the tech industry.
-            </p>
-          </div>
+        <h1 class="hero-title">Ali Uzair Channa</h1>
+        <p class="hero-subtitle">
+          Aspiring Full-Stack Developer with a Passion for Innovation
+        </p>
 
-          <aside class="contact-card">
-            <h3>Contact</h3>
-
-            <p class="contact-row">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <a href="mailto:ali.u.channa12@gmail.com">ali.u.channa12@gmail.com</a>
-            </p>
-
-            <p class="contact-row">
-              <i class="fab fa-github" aria-hidden="true"></i>
-              <a href="https://github.com/aliuchanna" target="_blank" rel="noopener noreferrer">aliuchanna</a>
-            </p>
-
-            <p class="contact-row">
-              <i class="fab fa-linkedin" aria-hidden="true"></i>
-              <a
-                href="https://www.linkedin.com/in/ali-channa-46568214b/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ali Uzair Channa
-              </a>
-            </p>
-          </aside>
+        <div class="hero-cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact</a>
         </div>
       </section>
+
+      <!-- About + Contact Box -->
+      <header class="header-grid">
+        <section class="about">
+          <h2>About Me</h2>
+          <p>
+            I am currently pursuing a degree in Computer Science at Mount Royal
+            University, with years of customer service and industry-related
+            experience. Having worked with leading telecom companies such as
+            Rogers and Telus, I have gained valuable technical insights that fuel
+            my passion for developing innovative solutions.
+          </p>
+
+          <p>
+            I am a motivated team player who enjoys collaborating on projects and
+            applying my skills to real-world problems. I am excited to continue
+            building my knowledge and contribute to impactful projects in the tech
+            industry.
+          </p>
+        </section>
+
+        <aside id="contact" class="contact-card">
+          <h2>Contact</h2>
+
+          <p>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:ali.u.channa12@gmail.com">ali.u.channa12@gmail.com</a>
+          </p>
+
+          <p>
+            <i class="fab fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/aliuchanna" target="_blank" rel="noreferrer">
+              aliuchanna
+            </a>
+          </p>
+
+          <p>
+            <i class="fab fa-linkedin" aria-hidden="true"></i>
+            <a
+              href="https://www.linkedin.com/in/ali-channa-46568214b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ali Uzair Channa
+            </a>
+          </p>
+        </aside>
+      </header>
 
       <!-- Projects -->
-      <section class="section" id="projects">
-        <div class="section-head">
-          <h2>My Projects</h2>
-          <p>Selected work — click to view live demos or repos.</p>
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">
+            Selected work — click to view live demos or repositories.
+          </p>
         </div>
 
-        <main class="projects">
-          
-                        <!-- FEATURED AI PROJECT -->
-            <article class="project featured">
-            <img
-                src="images/ai-finance.png"
-                alt="AI Financial Health Analyzer"
-            />
+        <!-- FEATURED -->
+        <article class="project featured">
+          <div class="project-image">
+            <img src="images/ai-finance.png" alt="AI Financial Health Analyzer" />
+          </div>
 
-            <div class="project-content">
-                <h3>AI Financial Health Analyzer</h3>
+          <div class="project-content">
+            <div class="badge">FEATURED</div>
 
-                <p>
-                A full-stack AI-powered web application that analyzes personal financial
-                data to generate risk metrics, cashflow insights, and actionable
-                recommendations. Built to combine computer science, finance, and modern
-                AI workflows.
-                </p>
+            <h3>AI Financial Health Analyzer</h3>
 
-                <p>
-                Users input income, expenses, and debt details to receive real-time
-                financial scoring, while an AI agent provides a personalized coaching-style
-                summary using large language models.
-                </p>
+            <p>
+              A full-stack AI-powered web application that analyzes personal
+              financial data to generate risk metrics, cashflow insights, and
+              actionable recommendations.
+            </p>
 
-                <ul class="tech">
-                <li>Next.js</li>
-                <li>TypeScript</li>
-                <li>SQL (Neon)</li>
-                <li>OpenAI API</li>
-                <li>Vercel</li>
-                </ul>
+            <p>
+              Users input income, expenses, and debt details to receive real-time
+              scoring. An AI agent generates a coaching-style summary, while a SQL
+              database stores contact/feedback submissions.
+            </p>
 
-                <div class="project-links">
-                <a
-                    class="actions">
-                <a  class="link-btn" href="https://aifinancesanalyzer.vercel.app/" target="_blank" rel="noopener noreferrer">
-                    See it Live
-                </a>
-                </a>
-                <a
-                    class="actions">
-                <a  class="link-btn" href="https://github.com/aliuchanna/AI-Financial-Health-Analyzer.git" target="_blank" rel="noopener noreferrer">
-                    GitHub Repo
-                </a>
-                </a>
+            <span class="highlight">Technology</span>
+            <ul class="tech">
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>SQL (Neon)</li>
+              <li>OpenAI API</li>
+              <li>Vercel</li>
+            </ul>
 
-                
-                </div>
-            </div>
-            </article>
-            
-            <article class="project">
-            <div class="project-media">
-              <img src="images/01-IMG_20141209_0001.jpg" alt="Building Scoring Program Project" />
+            <div class="project-links">
+              <a
+                class="btn primary"
+                href="https://aifinancesanalyzer.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Live Demo
+              </a>
+
+              <a
+                class="btn"
+                href="https://github.com/aliuchanna/AI-Financial-Health-Analyzer"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Repo
+              </a>
             </div>
 
-            <div class="project-content">
-              <h3>Building Scoring Program [Based on BluePrint Game]</h3>
+            <p class="tiny-note">
+              (Replace the Live Demo link with your Vercel domain.)
+            </p>
+          </div>
+        </article>
 
-              <p>
-                Developed a Python application that reads a building structure from a text file, calculates scores based on materials like glass, wood, stone, and recycled materials, and outputs the result into a formatted score report. The project was inspired by the Blueprints game by Z-Man Games and involved creating functions to process building data, apply material-specific scoring rules, and generate accurate results. The program demonstrates proficiency in file handling, list-based data structures, and implementing decision-making algorithms.
-              </p>
+        <!-- Project 1 -->
+        <article class="project">
+          <div class="project-image">
+            <img src="images/01-IMG_20141209_0001.jpg" alt="Blueprints Project" />
+          </div>
 
-              <span class="highlight">Technology</span>
-              <ul>
-                <li>Python</li>
-                <li>List Structures</li>
-                <li>File I/O</li>
-              </ul>
+          <div class="project-content">
+            <h3>Building Scoring Program [Based on BluePrint Game]</h3>
 
-              <div class="actions">
-                <a class="link-btn" href="https://github.com/aliuchanna/BluePrints-by-Z-Man-Games" target="_blank" rel="noopener noreferrer">
-                  GitHub Repo
-                </a>
-              </div>
+            <p>
+              Developed a Python application that reads a building structure from a
+              text file, calculates scores based on materials like glass, wood, stone,
+              and recycled materials, and outputs the result into a formatted score
+              report. The project was inspired by the Blueprints game by Z-Man Games
+              and involved creating functions to process building data, apply
+              material-specific scoring rules, and generate accurate results. The
+              program demonstrates proficiency in file handling, list-based data
+              structures, and implementing decision-making algorithms.
+            </p>
+
+            <span class="highlight">Technology</span>
+            <ul class="tech">
+              <li>Python</li>
+              <li>List Structures</li>
+              <li>File I/O</li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                class="btn"
+                href="https://github.com/aliuchanna/BluePrints-by-Z-Man-Games"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Repo
+              </a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="project">
-            <div class="project-media">
-              <img src="images/image1.png" alt="Guitar Store Website" />
+        <!-- Project 2 -->
+        <article class="project">
+          <div class="project-image">
+            <img src="images/image1.png" alt="Guitar Store Website" />
+          </div>
+
+          <div class="project-content">
+            <h3>Guitar Store Website</h3>
+
+            <p>
+              A modern and responsive e-commerce-style website designed for a
+              fictional guitar shop. Built using HTML, CSS, and JavaScript, the
+              site features product listings, category navigation, and a visually
+              engaging layout. Emphasis was placed on user-friendly design and
+              clean UI, showcasing a variety of guitars and accessories.
+            </p>
+
+            <span class="highlight">Technology</span>
+            <ul class="tech">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                class="btn primary"
+                href="https://aliuchanna.github.io/Guitar-Store-Website/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                See it Live
+              </a>
+
+              <a
+                class="btn"
+                href="https://github.com/aliuchanna/Guitar-Store-Website"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Repo
+              </a>
             </div>
+          </div>
+        </article>
 
-            <div class="project-content">
-              <h3>Guitar Store Website</h3>
+        <!-- Project 3 -->
+        <article class="project">
+          <div class="project-image">
+            <img src="images/image2.png" alt="CodeBridge Website" />
+          </div>
 
-              <p>
-                A modern and responsive e-commerce-style website designed for a fictional guitar shop. Built using HTML, CSS, and JavaScript, the site features product listings, category navigation, and a visually engaging layout. Emphasis was placed on user-friendly design and clean UI, showcasing a variety of guitars and accessories.
-              </p>
+          <div class="project-content">
+            <h3>CodeBridge Website</h3>
 
-              <span class="highlight">Technology</span>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
+            <p>
+              A clean, responsive website built with HTML, CSS, and JavaScript to
+              simulate a fictional peer tutoring service for MRU students. Features
+              include a splash screen, animated scroll transitions, a responsive 2x2
+              subject grid, an interactive contact form using Formspree, and a “Back
+              to Top” button. Designed with accessibility and mobile-first
+              responsiveness in mind.
+            </p>
 
-              <div class="actions">
-                <a class="link-btn" href="https://aliuchanna.github.io/Guitar-Store-Website/" target="_blank" rel="noopener noreferrer">
-                  See it Live
-                </a>
-                <a class="link-btn" href="https://github.com/aliuchanna/Guitar-Store-Website" target="_blank" rel="noopener noreferrer">
-                  GitHub Repo
-                </a>
-              </div>
+            <span class="highlight">Technology</span>
+            <ul class="tech">
+              <li>HTML5</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+
+            <div class="project-links">
+              <a
+                class="btn primary"
+                href="https://aliuchanna.github.io/CodeBridge-Website/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                See it Live
+              </a>
+
+              <a
+                class="btn"
+                href="https://github.com/aliuchanna/CodeBridge-Website"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub Repo
+              </a>
             </div>
-          </article>
-
-          <article class="project">
-            <div class="project-media">
-              <img src="images/image2.png" alt="CodeBridge Website" />
-            </div>
-
-            <div class="project-content">
-              <h3>CodeBridge Website</h3>
-
-              <p>
-                A clean, responsive website built with HTML, CSS, and JavaScript to simulate a fictional peer tutoring service for MRU students. Features include a splash screen, animated scroll transitions, a responsive 2x2 subject grid, an interactive contact form using Formspree, and a “Back to Top” button. Designed with accessibility and mobile-first responsiveness in mind.
-              </p>
-
-              <span class="highlight">Technology</span>
-              <ul>
-                <li>HTML5</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-
-              <div class="actions">
-                <a class="link-btn" href="https://aliuchanna.github.io/CodeBridge-Website/" target="_blank" rel="noopener noreferrer">
-                  See it Live
-                </a>
-                <a class="link-btn" href="https://github.com/aliuchanna/CodeBridge-Website" target="_blank" rel="noopener noreferrer">
-                  GitHub Repo
-                </a>
-              </div>
-            </div>
-          </article>
-        </main>
+          </div>
+        </article>
       </section>
 
+      <!-- Footer -->
       <footer class="footer">
-        <p>© <span id="year"></span> Ali Uzair Channa • Built with HTML/CSS</p>
+        <p>© <span id="year"></span> Ali Uzair Channa • Built with HTML + CSS</p>
       </footer>
     </div>
 
