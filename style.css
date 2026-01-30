@@ -305,4 +305,29 @@ ul li {
   .tagline {
     font-size: 12px;
   }
+
+    .project.featured {
+    border: 1px solid rgba(49, 166, 138, 0.4);
+    background: linear-gradient(
+        135deg,
+        rgba(49, 166, 138, 0.08),
+        rgba(17, 24, 39, 1)
+    );
+    }
+
+    .project.featured h3 {
+    font-size: 22px;
+    }
+
+    .project.featured::before {
+    content: "FEATURED PROJECT";
+    position: absolute;
+    margin-top: -18px;
+    background: #31a68a;
+    color: #020617;
+    padding: 4px 10px;
+    font-size: 11px;
+    border-radius: 6px;
+    font-weight: bold;
+    }
 }
